@@ -102,10 +102,13 @@ hr {
 .seconddiv {
   margin-top: 3rem;
 }
+.thirddiv {
+  margin-top: 3rem;
+}
+
 .home_section,
 .project_section,
 .about_section{
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -271,17 +274,16 @@ input {
 /* contact-section */
 
 
-
 /* media query for laptop */
 @media (min-width:1024px){
   .content h1 {
     font-size: 4.96rem;
 }
   .seconddiv{
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
   .thirddiv{
-    margin-top: 20rem;
+    margin-top: 4rem;
   }
   .contact_section h1 {
     margin: 0px 0.84rem;
@@ -295,7 +297,7 @@ input {
 /* media query for tablet */
 @media (min-width:769px) and (max-width:1023px){
   * {
-    font-size: 12px;
+    font-size: 14px;
   }
   .content h1 {
     font-size: 3rem;
@@ -313,10 +315,10 @@ input {
   font-size: 2rem;
 }    
 .seconddiv{
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 .thirddiv{
-  margin-top: 16rem;
+  margin-top: auto;
 }
 .contact_section {
   padding: 1rem;
@@ -329,7 +331,7 @@ input {
 
 
 /* media query for mobile */
-@media(max-width:768px){
+@media (min-width:601px) and (max-width:768px){
   * {
     font-size: 12px;
   }
@@ -342,18 +344,16 @@ input {
     margin: 0 0 0 2.7rem;
   }
   .about-info .bio-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 .project_section h1{
   font-size: 2rem;
 }    
 .seconddiv{
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
-.thirddiv{
-  margin-top: 16rem;
-}
+
 .contact_section {
   padding: 1rem;
 }
@@ -363,11 +363,49 @@ input {
 /* media query for mobile */
 
 
+/* media query for medium mobile */
+
+@media (min-width:480px) and (max-width:600px){
+  
+  *{
+    font-size: 8.3px;
+  }
+  
+  .img{
+    height: auto;
+  }
+  
+  .about-info .bio-image {
+    width: 100px;
+    height: 100px;
+}
+  .seconddiv {
+    margin-top: 3rem;
+}
+
+  .thirddiv {
+    margin-top: 4rem;
+}  
+    
+    
+  }  
+
+/* media query for medium mobile */
+
+
 /* media query for Low end mobile */
-@media(max-width:468px){
+@media (min-width:321px) and (max-width:479px){
   * {
     font-size: 9px;
   }
+
+  .img{
+    height: auto;
+  }
+  .nav ul li {
+    padding: 0 0.8rem;
+}
+
   .content h1 {
     font-size: 2rem;
   }
@@ -375,8 +413,16 @@ input {
     font-size: 1.2rem;
   }
 
+  .about-info .bio-image {
+    width: 100px;
+    height: 100px;
+}
+
 .thirddiv{
-  margin-top: 26rem;
+  margin-top: 1rem;
+}
+.seconddiv {
+  margin-top: 4rem;
 }
 
 .contact_section h1 {
@@ -390,5 +436,38 @@ input {
 
 /* media query for Low end mobile */
 
+/* media query for Low end mobile */
+
+@media (max-width:320px){
+  * {
+    font-size: 6px;
+  }
+
+  .nav ul li {
+    padding: 0 0.8rem;
+}
+
+  .home_section{
+    flex-direction: column;
+  }
+  .content{
+    width: 80%;
+  }
+  .about-info .bio-image {
+    width: 70px;
+    height: 70px;
+}
+
+  .img{
+    height: auto;
+  }
+
+  
+  .contact_section h1 {
+    margin: 0px 0.57rem;
+  }
+  
+}
+/* media query for Low end mobile */
 
 
